@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+
+
+{% block content %} 
+    <h1 id="title">{% block title %} Resume {% endblock %}</h1>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>First Activity</title>
+        <link rel="stylesheet" href="static/css/act2.css">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    </head>
+    <body>
+    
+    <div class="resume">
+       <div class="resume_left">
+         <div class="resume_profile">
+           <img src="static/image/IMG20200925112629.jpg" alt="profile_pic">
+         </div>
+         <div class="resume_content">
+           <div class="resume_item resume_info">
+             <div class="title">
+               <p class="bold">Symon Christopher A. Bolinas</p>
+               <p class="regular">Editor</p>
+             </div>
+             <ul>
+               <li>
+                 <div class="icon">
+                   <i class="fas fa-map-signs"></i>
+                 </div>
+                 <div class="data">
+                   44 San Marcos St. Balian, Pangil, Laguna <br /> PHILIPPINES
+                 </div>
+               </li>
+               <li>
+                 <div class="icon">
+                   <i class="fas fa-mobile-alt"></i>
+                 </div>
+                 <div class="data">
+                   +6395515040
+                 </div>
+               </li>
+             </ul>
+           </div>
+           <div class="resume_item resume_skills">
+             <div class="title">
+               <p class="bold">Skills</p>
+             </div>
+             <ul>
+               <li>
+                 <div class="skill_name">
+                   C#
+                 </div>
+                 <div class="skill_progress">
+                   <span style="width: 78%;"></span>
+                 </div>
+                 <div class="skill_per">78%</div>
+               </li>
+               <li>
+                 <div class="skill_name">
+                   C++
+                 </div>
+                 <div class="skill_progress">
+                   <span style="width: 71%;"></span>
+                 </div>
+                 <div class="skill_per">71%</div>
+               </li>
+               <li>
+                 <div class="skill_name">
+                   JAVA
+                 </div>
+                 <div class="skill_progress">
+                   <span style="width: 81%;"></span>
+                 </div>
+                 <div class="skill_per">81%</div>
+               </li>
+               <li>
+                 <div class="skill_name">
+                   HTML
+                 </div>
+                 <div class="skill_progress">
+                   <span style="width: 61%;"></span>
+                 </div>
+                 <div class="skill_per">61%</div>
+               </li>
+               <li>
+                 <div class="skill_name">
+                   CSS
+                 </div>
+                 <div class="skill_progress">
+                   <span style="width: 59%;"></span>
+                 </div>
+                 <div class="skill_per">59%</div>
+               </li>
+             </ul>
+           </div>
+           <div class="resume_item resume_social">
+             <div class="title">
+               <p class="bold">Social Media</p>
+             </div>
+             <ul>
+               <li>
+                 <div class="icon">
+                   <i class="fab fa-facebook-square"></i>
+                 </div>
+                 <div class="data">
+                   <p class="semi-bold">Facebook</p>
+                   <p>Symon Christopher A. Bolinas</p>
+                 </div>
+               </li>
+             </ul>
+           </div>
+         </div>
+      </div>
+      <div class="resume_right">
+        <div class="resume_item resume_about">
+            <div class="title">
+               <p class="bold">Profile</p>
+             </div>
+            <p>I am Symon Christopher A. Bolinas from Balian, Pangil, Laguna. I am 21 years old. I am Computer System Servicing NCII holder and computer literate.</p>
+        </div>
+        <div class="resume_item resume_work">
+            <div class="title">
+               <p class="bold">Work Experience</p>
+             </div>
+            <ul>
+                <li>
+                    <div class="date">2018</div> 
+                    <div class="info">
+                         <p class="semi-bold">SALES BOY</p> 
+                      <p>BIGKING SHOPPING MALL. Siniloan, Laguna</p>
+                    </div>
+                </li>
+                <li>
+                  <div class="date">2018 - 2021</div>
+                  <div class="info">
+                         <p class="semi-bold">SPES</p> 
+                      <p>ECO PARK. Pangil, Laguna</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="resume_item resume_education">
+          <div class="title">
+               <p class="bold">Education</p>
+             </div>
+          <ul>
+                <li>
+                    <div class="date">2022</div> 
+                    <div class="info">
+                         <p class="semi-bold">BSIT- College (Laguna State Polytechnic University Siniloan Campus)</p> 
+                      <p>Siniloan, Laguna</p>
+                    </div>
+                </li>
+                <li>
+                  <div class="date">2020</div>
+                  <div class="info">
+                         <p class="semi-bold">ICT- Senior High (Balian Integrated National High School)</p> 
+                      <p>Pangil, Laguna</p>
+                    </div>
+                </li>
+                <li>
+                  <div class="date">2018</div>
+                  <div class="info">
+                         <p class="semi-bold">Junior High (Balian Integrated National High School)</p> 
+                      <p>Pangil, Laguna</p>
+                    </div>
+                </li>
+                <li>
+                  <div class="date">2013</div>
+                  <div class="info">
+                         <p class="semi-bold">Elementary (Paete Central Elementary School)</p> 
+                      <p>Paete, Laguna</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    </body>
+    </html>
+{% endblock %}
