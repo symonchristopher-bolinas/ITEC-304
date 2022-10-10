@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+
+{% block content %} 
+    <h1 id="title">{% block title %} Form {% endblock %}</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTML Forms</title>
+</head>
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+<body>
+	<div id="html-forms">
+    	<form action="/action_page.php">
+			<h2>Player Form</h2>
+			<h3>Player Name</h3>
+			<label for="firstname">First Name:</label><br>
+  			<input type="text" id="firstname" name="firstname"><br>
+			<label for="middlename">Middle Name:</label><br>
+  			<input type="text" id="middlename" name="middlename"><br>
+		  	<label for="lastname">Last Name:</label><br>
+		  	<input type="text" id="lastname" name="lastname"><br>
+			
+			<h3>Player Gender/Sex</h3>	
+		  	<input type="radio" id="male" name="gender" value="MALE">
+  		  	<label for="male">MALE</label><br>
+                  	<input type="radio" id="female" name="gender" value="FEMALE">
+		  	<label for="female">FEMALE</label><br>
+			
+			<h3>Player Birthday</h3>
+			<label for="pbirthday">Birthday:</label>
+  			<input type="date" id="pbirthday" name="pbirthday"><br>
+		
+			<h3>Player Age</h3>	
+			<label for="age">Age (between 18 and 35):</label><br>
+  			<input type="number" id="age" name="age" min="18" max="35"><br>
+		
+			<h3>Sports</h3>	
+			<input type="checkbox" id="sports1" name="sports1" value="basketball">
+		  	<label for="sports1"> Basketball</label><br>
+		  	<input type="checkbox" id="sports2" name="sports2" value="volleyball">
+		  	<label for="sports2"> Volleyball</label><br>
+		  	<input type="checkbox" id="sports3" name="sports3" value="badminton">
+		  	<label for="sports3"> Badminton</label><br>
+          		<input type="checkbox" id="sports4" name="sports4" value="tennis">
+		  	<label for="sports4"> Tennis</label><br>
+            		<input type="checkbox" id="sports5" name="sports5" value="sepak">
+		  	<label for="sports5"> Sepak</label><br>
+			
+			<h3>Jersy Color</h3>	
+			<label for="jersycolor">Select your jersy color:</label>
+  			<input type="color" id="jersycolor" name="jersycolor"><br>
+			
+			<h3>2x2 picture</h3>	
+			<label for="myfile">Select a image:</label><br>
+  			<input type="file" id="myfile" name="myfile"><br>
+			
+			<h3>Contract</h3>	
+			<label for="contract">Contract (between 1 and 10 years):</label><br>
+  			<input type="range" id="contract" name="contract" min="1" max="10"><br>
+			
+			<h3>Mobile Number</h3>	
+			<label for="phone">Enter your phone number:</label><br>
+  			<input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"><br>
+			
+			<br><input type="submit" value="SUBMIT"><br>
+			<input type="reset" value="RESET"><br>
+			
+		</form>
+	</div>
+
+</body>
+</html>
+{% endblock %}
